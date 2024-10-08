@@ -9,10 +9,10 @@
 </head>
 
 <body>
-<div id="wrapper">
-    <header>
-        <div class="ascii">
-            <pre>
+    <div id="wrapper">
+        <header>
+            <div class="ascii">
+                <pre>
   ____ ____ ___ _____   _ _ _                                        
  / ___/ ___|_ _|_   _| / / / |                                       
 | |   \___ \| |  | |   | | | |                                       
@@ -25,107 +25,123 @@
   | |  __/>  <| |_   / ___ \ (_| |\ V /  __/ | | | |_| |_| | | |  __/
   |_|\___/_/\_\\__| /_/   \_\__,_| \_/ \___|_| |_|\__|\__,_|_|  \___|
                     </pre>
-        </div>
-    </header>
-    <main>
-        <h2>Group Activity Instructions: Update an Adventure Game</h2>
+            </div>
+        </header>
+        <main>
+            <h2>Group Activity Instructions: Update an Adventure Game</h2>
 
-        <p>You will be working in groups of 2-3 to expand and enhance the provided adventure game. The goal of
-            this activity is for you to analyze the existing code and plan how you will add at least one more choice for
-            the player. Additionally, you must incorporate both a <b>while loop</b> and a <b>for loop</b> somewhere in
-            the game. </p>
+            <p>You will be working in groups of 2-3 to expand and enhance the provided adventure game. The goal of
+                this activity is for you to analyze the existing code and plan how you will add at least one more choice
+                for
+                the player. Additionally, you must incorporate both a <b>while loop</b> and a <b>for loop</b> somewhere
+                in
+                the game. </p>
 
-        <p>First things first:</p>
+            <p>First things first:</p>
 
-        <h3>Examine the Provided Code</h3>
-        <ol>
-            <li><b>Read through the program</b> (<b>Link:</b> <a href="adventureActivity.py">adventureActivity.py)</a><br>
-                Familiarize yourself with how the game works by reading the entire
-                code. Explain it outloud to each other so <b>everyone</b> in the group has a full understanding.
-                <br><br>Pay close attention to the parts where the player makes choices, such as choosing to go left or
-                right and deciding whether to fight or run.
-            </li>
-            <li><b>Understanding the random function:</b><br>
-                The <code>random.randint(a, b)</code> function generates a random integer between <code>a</code> and
-                <code>b</code>. In the game this is used to simulate dice rolls for both the player and the wolf. When
-                the player fights the wolf, both the player and the wolf roll a number between 1 and 6. Whoever rolls
-                the higher number wins.
-                <br><br>
+            <h3>Examine the Provided Code</h3>
+            <ol>
+                <li><b>Read through the program</b> (<b>Link:</b> <a
+                        href="adventureActivity.py">adventureActivity.py)</a><br>
+                    Familiarize yourself with how the game works by reading the entire
+                    code. Explain it outloud to each other so <b>everyone</b> in the group has a full understanding.
+                    <br><br>Pay close attention to the parts where the player makes choices, such as choosing to go left
+                    or
+                    right and deciding whether to fight or run.
+                </li>
+                <li><b>Understanding the random function:</b><br>
+                    The <code>random.randint(a, b)</code> function generates a random integer between <code>a</code> and
+                    <code>b</code>. In the game this is used to simulate dice rolls for both the player and the wolf.
+                    When
+                    the player fights the wolf, both the player and the wolf roll a number between 1 and 6. Whoever
+                    rolls
+                    the higher number wins.
+                    <br><br>
 
-                Think about how you might use randomness in your own choices or encounters (e.g., additional dice rolls,
-                varying treasure amounts, varying paths to travel).
-            </li>
+                    Think about how you might use randomness in your own choices or encounters (e.g., additional dice
+                    rolls,
+                    varying treasure amounts, varying paths to travel).
+                </li>
 
-        </ol>
-
-
-        <h3>Plan New Choices</h3>
-        <p>In your group, come up with <b>at least one new scenario or choice</b> to add to the game. Be creative! Here
-            are
-            a few ideas to get you started:</p>
-
-        <ul>
-            <li>Another fork in the road where different dangers await.</li>
-            <li>Finding an item (e.g., a sword or potion) that can help in fights (add +1 to a dice roll, etc.)</li>
-            <li>Encountering another character who offers a deal or a challenge.</li>
-        </ul>
-
-        <h3>Incorporate a While Loop and a For Loop</h3>
-        <p>Your group also needs to incorporate both a <b>while loop</b> and a <b>for loop</b> into your game. Here are
-            some
-            ideas for how to use each:</p>
-
-        <h4>While Loop Ideas:</h4>
-
-        <ul>
-            <li>A loop that repeats until the player finds treasure or encounters a specific event.</li>
-            <li>A loop that allows the player to keep making decisions until they reach a certain goal.</li>
-            <li>A loop that asks the player to keep rolling dice until they either win or lose a fight.</li>
-        </ul>
+            </ol>
 
 
-        <h4>For Loop Ideas:</h4>
-        <ul>
-            <li>A loop that repeats for a set number of turns (e.g., rolling the dice three times to see if the player
-                can defeat the enemy - accumulator).</li>
-            <li>A loop that goes through a list of obstacles or enemies that the player must face one by one.</li>
-            <li>A loop to simulate repeated attempts to search for treasure or gather supplies.</li>
-        </ul>
+            <h3>Plan New Choices</h3>
+            <p>In your group, come up with <b>at least one new scenario or choice</b> to add to the game. Be creative!
+                Here
+                are
+                a few ideas to get you started:</p>
+                <h4>New Choice Ideas:</h4>
+            <ul>
+                <li>Another fork in the road where different dangers await.</li>
+                <li>Finding an item (e.g., a sword or potion) that can help in fights (add +1 to a dice roll, etc.)</li>
+                <li>Encountering another character who offers a deal or a challenge.</li>
+            </ul>
+
+            <h3>Incorporate a While Loop and a For Loop</h3>
+            <p>Your group also needs to incorporate both a <b>while loop</b> and a <b>for loop</b> into your game. Here
+                are
+                some
+                ideas for how to use each:</p>
+
+            <h4>While Loop Ideas:</h4>
+
+            <ul>
+                <li>A loop that allows the user to play the game again.</li>
+                <li>A loop that repeats until the player finds treasure or encounters a specific event.</li>
+                <li>A loop that allows the player to keep making decisions until they reach a certain goal.</li>
+                <li>A loop that asks the player to keep rolling dice until they either win or lose a fight.</li>
+            </ul>
 
 
-        <h3>Build Your Adventure World</h3>
-        <p>Your group is free to design your game world however you like, using the provided code as a foundation. Think
-            about
-            what kind of adventure your players will go on:</p>
-        <ul>
-            <li>What’s the main objective? Is it just to find treasure, or something more?</li>
-            <li>What kinds of characters, challenges, and treasures will the players encounter?</li>
-        </ul>
+            <h4>For Loop Ideas:</h4>
+            <ul>
+                <li>A loop that repeats for a set number of turns (e.g., rolling the dice three times to see if the
+                    player
+                    can defeat the enemy - accumulator).</li>
+                <li>A loop that goes through a list of obstacles or enemies that the player must face one by one.</li>
+                <li>A loop to simulate repeated attempts to search for treasure or gather supplies.</li>
+            </ul>
 
-        <h3>Implement and Test</h3>
-        <p>Once you have planned your new choices and loops, implement them in the code. Test the game by playing
-            through it with different choices and scenarios. Debug as needed to ensure the game works as expected.</p>
 
-        <h2>Deliverable Requirements</h2>
+            <h3>Build Your Adventure World</h3>
+            <p>Your group is free to design your game world however you like, using the provided code as a foundation.
+                Think
+                about
+                what kind of adventure your players will go on:</p>
+            <ul>
+                <li>What’s the main objective? Is it just to find treasure, or something more?</li>
+                <li>What kinds of characters, challenges, and treasures will the players encounter?</li>
+            </ul>
 
-        <ol>
-            <li>At least <b>one</b> new player choice in the game.</li>
-            <li>At least one <b>while loop</b> and one <b>for loop</b> incorporated that makes sense for your code.</li>
-            <li>Appropriate code comments to explain logic and changes made. </li>
-        </ol>
-        <h2>Submission Requirements</h2>
-        <ol>
-            <li>Hopefully, a working adventure game that reflects your group's creative world and objectives. (.py file)
-            </li>
-            <li>Reflection comment in your individual Brightspce submisison that includes links to any resources used
-                and an explanation of how your group used them or what was learned from them.</li>
-        </ol>
+            <h3>Implement and Test</h3>
+            <p>Once you have planned your new choices and loops, implement them in the code. Test the game by playing
+                through it with different choices and scenarios. Debug as needed to ensure the game works as expected.
+            </p>
 
-        <footer>
-            <p>Good luck, and have fun !!!</p>
-        </footer>
-    </main>
-</div>
+            <h2>Deliverable Requirements</h2>
+
+            <ol>
+                <li>At least <b>one</b> new player choice in the game.</li>
+                <li>At least one <b>while loop</b> and one <b>for loop</b> incorporated that makes sense for your code.
+                </li>
+                <li>Appropriate code comments to explain logic and changes made. </li>
+            </ol>
+            <h2>Submission Requirements</h2>
+            <ol>
+                <li>Hopefully, a working adventure game that reflects your group's creative world and objectives. (.py
+                    file)
+                </li>
+                <li>Reflection comment in your individual Brightspce submisison that includes links to any resources
+                    used
+                    and an explanation of how your group used them or what was learned from them.</li>
+            </ol>
+
+            <footer>
+                <p>Good luck, and have fun !!!</p>
+            </footer>
+        </main>
+    </div>
 </body>
 
 </html>
